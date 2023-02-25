@@ -32,6 +32,7 @@
     <nav class="filter">
       <button @click="filter = 'all'">All tasks</button>
       <button @click="filter = 'favs'">Fav tasks</button>
+      <button @click="taskStore.$reset">Reset</button>
     </nav>
 
     <div class="loading" v-if="taskStore.isLoading">Loading tasks...</div>
@@ -49,5 +50,8 @@
           <TaskDetails :task="task" />
         </div>
       </div>
+      
+      
+
   </main>
 </template>
