@@ -50,6 +50,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem 0;
 }
 header img {
   max-width: 60px;
@@ -62,4 +63,38 @@ header h1 {
   margin-left: 15px;
   color: #777;
   transform: rotate(2deg);
+}
+
+/* task list */
+.task-list {
+  max-width: 640px;
+  margin: 20px auto;
+}
+
+.task {
+  padding: 6px 20px;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task h3,
+.task .icons {
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.task .icons {
+  text-align: right;
+}
+
+.task span {
+  font-size: 1.2rem;
+  margin-left: 6px;
+  cursor: pointer;
+  color: #bbb;
 }
