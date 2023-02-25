@@ -1,13 +1,15 @@
 
 <script lang="ts">
+  import taskForm from '@/components/taskForm.vue';
   import { ref } from 'vue';
   import TaskDetails from '../components/taskDetails.vue';
   import { useTaskStore } from '../stores/taskStore'
   
   export default {
     components : {
-      TaskDetails
-    },
+    TaskDetails,
+    taskForm
+},
     setup() {
       const taskStore = useTaskStore()
       const filter = ref('all')
@@ -22,6 +24,9 @@
       <img src="../assets/pinia-logo.svg" alt="Logo" />
       <h1>Pinia Tasks</h1>
     </header>
+    <div class="new-task-form">
+      <taskForm />
+    </div>
     <!-- filter -->
     <nav class="filter">
       <button @click="filter = 'all'">All tasks</button>
