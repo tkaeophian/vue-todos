@@ -71,5 +71,8 @@ export const useTaskStore = defineStore('taskStore', {
                 console.log(error);
             }
         },
-    }
+    },
+    persist: {
+        storage: sessionStorage,
+    },
 })
