@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <header>
+      <img src="../assets/pinia-logo.svg" alt="Logo" />
+      <h1>Pinia Tasks</h1>
+    </header>
   </main>
 </template>
